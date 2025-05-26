@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campus Connect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #2d3436;
+    }
+
+    header {
+      background-color: #5f55e3;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    .intro {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 800px;
+      color: #555;
+      font-size: 1.15rem;
+      padding: 0 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      padding: 30px 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      color: #2d3436;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      margin: 50px 0 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Campus Connect</h1>
+  </header>
+
+  <div class="intro">
+    <p>Explora recursos útiles, eventos académicos y oportunidades de colaboración en tu universidad.</p>
+  </div>
+
+  <div class="container">
+
+    <!-- Recursos -->
+    <a class="card" href="recursos.html">
+      <img src="img/recursos.png" alt="Recursos académicos" />
+      <h2>Recursos</h2>
+      <p>Accede a materiales educativos, bibliotecas, bases de datos y más.</p>
+    </a>
+
+    <!-- Eventos -->
+    <a class="card" href="eventos.html">
+      <img src="img/eventos.png" alt="Eventos y talleres" />
+      <h2>Eventos</h2>
+      <p>Consulta ferias, talleres, conferencias y servicios estudiantiles.</p>
+    </a>
+
+    <!-- Colaboración -->
+    <a class="card" href="colaboracion.html">
+      <img src="img/colaboracion.png" alt="Colaboración" />
+      <h2>Colaboración</h2>
+      <p>Encuentra convocatorias, mentores y programas para trabajar en equipo.</p>
+    </a>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Campus Connect</p>
+  </footer>
+
+</body>
+</html>
+
